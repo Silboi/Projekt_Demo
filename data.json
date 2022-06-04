@@ -1,79 +1,77 @@
 {
-  "Drink 1": {
-    "Mojito": {
-      "Zutaten": {
-        "Rum": {
-          "Menge": "5cl",
-          "Preis": "xxx"
-        },
-        "Limettensaft": {
-          "Menge": "2,5cl",
-          "Preis": "xxx"
-        },
-        "Rohrzucker": {
-          "Menge": "2-3 Teelöffel",
-          "Preis": "xxx"
-        },
-        "Mineralwasser": {
-          "Menge": "5-8cl",
-          "Preis": "xxx"
+  "Drinks": {
+    "Drink 1": {
+      "Mojito": {
+        "Zutaten": {
+          "Rum": {
+            "Menge": "5cl",
+            "Preis": "xxx"
+          },
+          "Limettensaft": {
+            "Menge": "2,5cl",
+            "Preis": "xxx"
+          },
+          "Rohrzucker": {
+            "Menge": "2-3 Teelöffel",
+            "Preis": "xxx"
+          },
+          "Mineralwasser": {
+            "Menge": "5-8cl",
+            "Preis": "xxx"
+          }
         }
       }
-    }
-  }
-}
-
-{
-  "Drink 2": {
-    "Mojito": {
-      "Zutaten": {
-        "Rum": {
-          "Menge": "cl",
-          "Preis": "xxx"
-        },
-        "Limettensaft": {
-          "Menge": "cl",
-          "Preis": "xxx"
-        },
-        "Rohrzucker": {
-          "Menge": "",
-          "Preis": "xxx"
-        },
-        "Mineralwasser": {
-          "Menge": "5-8cl",
-          "Preis": "xxx"
+    },
+    "Drink 2": {
+      "Caipirinha": {
+        "Zutaten": {
+          "Cachaca": {
+            "Menge": "5cl",
+            "Preis": "xxx"
+          },
+          "Limette": {
+            "Menge": "1",
+            "Preis": "xxx"
+          },
+          "Rohrzucker": {
+            "Menge": "2 Esslöffel",
+            "Preis": "xxx"
+          }
         }
       }
-    }
-  }
-}
-
-{
+    },
     "Drink 3": {
-    "Mojito": {
-      "Zutaten": {
-        "Rum": {
-          "Menge": "5cl",
-          "Preis": "xxx"
-        },
-        "Limettensaft": {
-          "Menge": "2,5cl",
-          "Preis": "xxx"
-        },
-        "Rohrzucker": {
-          "Menge": "2-3 Teelöffel",
-          "Preis": "xxx"
-        },
-        "Mineralwasser": {
-          "Menge": "5-8cl",
-          "Preis": "xxx"
+      "Pina Colada": {
+        "Zutaten": {
+          "Rum": {
+            "Menge": "4cl",
+            "Preis": "xxx"
+          },
+          "Ananassaft": {
+            "Menge": "10cl",
+            "Preis": "xxx"
+          },
+          "Kokosnuss Creme": {
+            "Menge": "4cl",
+            "Preis": "xxx"
+          },
+          "Schlagsahne": {
+            "Menge": "2cl",
+            "Preis": "xxx"
+          },
+          "Eiswürfel": {
+            "Menge": "4",
+            "Preis": "xxx"
+          },
+          "Ananas": {
+            "Menge": "1 Scheibe",
+            "Preis": "xxx"
+          }
         }
       }
-    }
-  }
-}
+    },
 
-{
+
   "Drink 1": {
     "Mojito": {
       "Zutaten": {
