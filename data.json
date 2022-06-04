@@ -1,50 +1,77 @@
 {
-  "Grooving": {
-    "CO-MICS": {
-      "Soft": {
-        "SPEEP": {
-          "Power": "40% Continuous",
-          "Flow / Venturi effect": "18 ml/min",
-          "Vacuum": "100 mmHg",
-          "Bottle height": "80-100 cm / 58-73 mmHg"
+  "Drink 1": {
+    "Mojito": {
+      "Zutaten": {
+        "Rum": {
+          "Menge": "5cl",
+          "Preis": "xxx"
         },
-        "Peristaltic": {
-          "Power": "40% Continuous",
-          "Flow / Venturi effect": "18 ml/min",
-          "Vacuum": "100 mmHg",
-          "Bottle height": "80-100 cm / 58-73 mmHg"
+        "Limettensaft": {
+          "Menge": "2,5cl",
+          "Preis": "xxx"
         },
-        "Venturi": {
-          "Power": "40% Continuous",
-          "Flow / Venturi effect": "max 80%",
-          "Vacuum": "100 mmHg",
-          "Bottle height": "80-100 cm / 58-73 mmHg"
-        }
-      },
-      "Medium": {
-        "SPEEP": {
-          "Power": "60% Continuous",
-          "Flow / Venturi effect": "18 ml/min",
-          "Vacuum": "100 mmHg",
-          "Bottle height": "80-100 cm / 58-73 mmHg"
+        "Rohrzucker": {
+          "Menge": "2-3 Teelöffel",
+          "Preis": "xxx"
         },
-        "Peristaltic": {
-          "Power": "60% Continuous",
-          "Flow / Venturi effect": "18 ml/min",
-          "Vacuum": "100 mmHg",
-          "Bottle height": "80-100 cm / 58-73 mmHg"
-        },
-        "Venturi": {
-          "Power": "60% Continuous",
-          "Flow / Venturi effect": "max 80%",
-          "Vacuum": "100 mmHg",
-          "Bottle height": "80-100 cm / 58-73 mmHg"
+        "Mineralwasser": {
+          "Menge": "5-8cl",
+          "Preis": "xxx"
         }
       }
     }
   }
 }
 
+{
+  "Drink 2": {
+    "Mojito": {
+      "Zutaten": {
+        "Rum": {
+          "Menge": "cl",
+          "Preis": "xxx"
+        },
+        "Limettensaft": {
+          "Menge": "cl",
+          "Preis": "xxx"
+        },
+        "Rohrzucker": {
+          "Menge": "",
+          "Preis": "xxx"
+        },
+        "Mineralwasser": {
+          "Menge": "5-8cl",
+          "Preis": "xxx"
+        }
+      }
+    }
+  }
+}
+
+{
+    "Drink 3": {
+    "Mojito": {
+      "Zutaten": {
+        "Rum": {
+          "Menge": "5cl",
+          "Preis": "xxx"
+        },
+        "Limettensaft": {
+          "Menge": "2,5cl",
+          "Preis": "xxx"
+        },
+        "Rohrzucker": {
+          "Menge": "2-3 Teelöffel",
+          "Preis": "xxx"
+        },
+        "Mineralwasser": {
+          "Menge": "5-8cl",
+          "Preis": "xxx"
+        }
+      }
+    }
+  }
+}
 
 {
   "Drink 1": {
@@ -60,13 +87,13 @@
         },
         "Rohrzucker": {
           "Menge": "2-3 Teelöffel",
-          "Preis": ""
+          "Preis": "xxx"
+        },
+        "Mineralwasser": {
+          "Menge": "5-8cl",
+          "Preis": "xxx"
         }
-
-
       }
     }
-
-
   }
 }
