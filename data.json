@@ -72,8 +72,8 @@
     },
 
 
-  "Drink 1": {
-    "Mojito": {
+  "Drink 4": {
+    "Cuba Libre": {
       "Zutaten": {
         "Rum": {
           "Menge": "5cl",
@@ -94,4 +94,4 @@
       }
     }
   }
-}
+},
