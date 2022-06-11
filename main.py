@@ -8,7 +8,6 @@ import random
 
 
 app = Flask(__name__)
-app.secret_key = "moin"
 
 
 @app.route("/asdf")
@@ -37,6 +36,11 @@ def zutaten():
         return render_template("zutaten.html", zutaten=zutaten)
     else:
         return render_template("error.html")
+
+
+@app.route("/error")
+def error():
+    return render_template("error.html")
 
 
 @app.route("/liste")
