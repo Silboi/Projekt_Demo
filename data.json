@@ -70,28 +70,95 @@
         }
       }
     },
-
-
-  "Drink 4": {
-    "Cuba Libre": {
-      "Zutaten": {
-        "Rum": {
-          "Menge": "5cl",
-          "Preis": "xxx"
-        },
-        "Limettensaft": {
-          "Menge": "2,5cl",
-          "Preis": "xxx"
-        },
-        "Rohrzucker": {
-          "Menge": "2-3 Teelöffel",
-          "Preis": "xxx"
-        },
-        "Mineralwasser": {
-          "Menge": "5-8cl",
-          "Preis": "xxx"
+    "Drink 4": {
+      "Cuba Libre": {
+        "Zutaten": {
+          "Rum": {
+            "Menge": "5cl",
+            "Preis": "xxx"
+          },
+          "Cola": {
+            "Menge": "15cl",
+            "Preis": "xxx"
+          },
+          "Limette": {
+            "Menge": "1/2",
+            "Preis": "xxx"
+          },
+          "Eiswürfel": {
+            "Menge": "3-4",
+            "Preis": "xxx"
+          }
+        }
+      }
+    },
+    "Drink 5": {
+      "Moscow Mule": {
+        "Zutaten": {
+          "Vodka": {
+            "Menge": "6cl",
+            "Preis": "xxx"
+          },
+          "Gurke": {
+            "Menge": "2 Scheiben",
+            "Preis": "xxx"
+          },
+          "Limettensaft": {
+            "Menge": "2cl",
+            "Preis": "xxx"
+          },
+          "Eiswürfel": {
+            "Menge": "3-4",
+            "Preis": "xxx"
+          },
+          "Ginger Beer": {
+            "Menge": "16cl",
+            "Preis": "xxx"
+          }
+        }
+      }
+    },
+    "Drink 6": {
+      "Gin Tonic": {
+        "Zutaten": {
+          "Gin": {
+            "Menge": "4cl",
+            "Preis": "xxx"
+          },
+          "Tonic Water": {
+            "Menge": "250ml",
+            "Preis": "xxx"
+          },
+          "Limette": {
+            "Menge": "1 Scheibe",
+            "Preis": "xxx"
+          },
+          "Eiswürfel": {
+            "Menge": "3-4",
+            "Preis": "xxx"
+          }
+        }
+      }
+    },
+    "Drink 7": {
+      "Margarita": {
+        "Zutaten": {
+          "weisser Tequila": {
+            "Menge": "4cl",
+            "Preis": "xxx"
+          },
+          "Orangenlikör": {
+            "Menge": "2cl",
+            "Preis": "xxx"
+          },
+          "Limettensaft": {
+            "Menge": "2cl",
+            "Preis": "xxx"
+          },
+          "Limette": {
+            "Menge": "1/2",
+            "Preis": "xxx"
+          }
         }
       }
     }
-  }
-},
