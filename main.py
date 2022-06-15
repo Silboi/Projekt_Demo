@@ -5,6 +5,7 @@ from flask import request
 from flask import redirect
 from flask import jsonify
 import random
+import json
 
 
 app = Flask(__name__)
@@ -35,7 +36,7 @@ def zutaten():
         zutaten = request.form["erste_zutat"]
         return render_template("zutaten.html", zutaten=zutaten)
     else:
-        return render_template("error.html")
+        return redirect(url_for("error.html"))
 
 
 @app.route("/error")
@@ -43,9 +44,26 @@ def error():
     return render_template("error.html")
 
 
+def load_daten():
+    datei_name = "data.json"
+
+    try:
+        with open(datei_name) as open_file:
+            datei_inhalt = json.load(open_file)
+    except FileNotFoundError:
+        datei_inhalt = {}
+
+    return datei_inhalt
+
+
 @app.route("/liste")
-def liste():
-    return jsonify()
+def auflisten():
+    drinks = load_daten()
+
+    return drinks
+
+
+
 
 
 
