@@ -3,7 +3,7 @@ from flask import render_template
 from flask import url_for
 from flask import request
 from flask import redirect
-from flask import jsonify
+from flask import json
 import random
 import json
 
@@ -17,15 +17,11 @@ def home():
     return render_template("index.html", link=about_link)
 
 
-@app.route('/', methods=["get", "post"]) #formular erstellt bzw. verknüfung, mit get und post wird entgegengenommen und wiedergegeben
+@app.route('/', methods=["get", "post"]) #formular erstellt bzw. verknüpfung, mit get und post wird entgegengenommen und wiedergegeben
 def formular():
     if request.method.lower() == "post":
         zutaten = request.form["erste_zutat"]
         return redirect(url_for("zutaten"))
-     #   return render_template('formular.html')
-   # if request.method.lower() == "post":
-    #    name = request.form['vorname']
-     #   return(name)
     else:
         return render_template("formular.html")
 
@@ -33,10 +29,14 @@ def formular():
 @app.route("/zutaten", methods=["get", "post"])
 def zutaten():
     if request.method.lower() == "post":
-        zutaten = request.form["erste_zutat"]
-        return render_template("zutaten.html", zutaten=zutaten)
+        zutaten_1 = request.form["erste_zutat"]
+        zutaten_2 = request.form["zweite_zutat"]
+        zutaten_3 = request.form["dritte_zutat"]
+        return render_template("zutaten.html", zutaten1=zutaten_1, zutaten2=zutaten_2, zutaten3=zutaten_3)
+
     else:
-        return redirect(url_for("error.html"))
+        about_link = url_for("error")
+        return render_template("error.html", link=about_link)
 
 
 @app.route("/error")
@@ -44,35 +44,47 @@ def error():
     return render_template("error.html")
 
 
-def load_daten():
-    datei_name = "data.json"
+#def load_daten():       # Daten von der json Datei werden geladen
+ #   datei_name = "data.json"
 
-    try:
-        with open(datei_name) as open_file:
-            datei_inhalt = json.load(open_file)
-    except FileNotFoundError:
-        datei_inhalt = {}
+  #  try:
+   #     with open(datei_name) as open_file:
+    #        datei_inhalt = json.load(open_file)
+   # except FileNotFoundError:
+    #    datei_inhalt = {}
 
-    return datei_inhalt
+  #  return datei_inhalt
 
 
-@app.route("/liste")
+def dictionary_aus_json():          # Daten von der json Datei werden geladen
+    with open("data.json") as file:
+        data = json.load(file)
+    return data
+
+
+@app.route("/liste")        # Daten werden ausgegeben
 def auflisten():
-    drinks = load_daten()
+    drinks = dictionary_aus_json()
 
     return drinks
 
 
+@app.route("/einkaufszettel")
+def rechnen():
+    if zutaten1 in data
+        return render_template("einkaufsliste.html")
+
+    else:
+        about_link = url_for("error")
+        return render_template("error.html", link=about_link)
 
 
 
 
-@app.route("/")
-def hello():
-    names = ["Sydney", "Silvan", "Furkan", "Gianluca", "Domingo"]
-    name_choice = random.choice(names)
-    about_link = url_for("about")
-    return render_template("index.html", name=name_choice, link=about_link)
+
+
+
+
 
 
 @app.route("/menu")
