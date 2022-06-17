@@ -4,4 +4,28 @@
 
 
 
+{% for drink_name, zutaten in drinks.items(): %}
+
+<ul>
+
+<li>{{ drink_name }}
+    <ul>
+        <li> Zutaten
+            <ul>
+                {% for zutat in zutaten["Zutaten"].keys(): %}
+                <li>{{ zutat }}</li>
+                {% endfor %}
+
+            </ul>
+        <li/>
+    </ul>
+</li>
+
+</ul>
+
+{% endfor %}
+
+
+
+
 {% endblock %}

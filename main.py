@@ -4,7 +4,6 @@ from flask import url_for
 from flask import request
 from flask import redirect
 from flask import json
-import random
 import json
 
 
@@ -32,11 +31,32 @@ def zutaten():
         zutaten_1 = request.form["erste_zutat"]
         zutaten_2 = request.form["zweite_zutat"]
         zutaten_3 = request.form["dritte_zutat"]
-        return render_template("zutaten.html", zutaten1=zutaten_1, zutaten2=zutaten_2, zutaten3=zutaten_3)
+
+        karte = dictionary_aus_json()
+        drinks_match = []
+
+        for drink in karte:
+
+            drink_name = drink
+
+            for zutat in drink["Zutaten"]:
+
+                if zutaten_1 or zutaten_2 or zutaten_3 == zutat:
+                    drinks_match = drinks_match.append(drink_name)
+
+                else:
+                    drinks_match = "no match found"
+
+                return render_template("zutaten.html", zutaten1=zutaten_1, zutaten2=zutaten_2, zutaten3=zutaten_3, drinks_match=drinks_match, karte=karte)
+
+
+
+    #    else:
+     #       about_link = url_for("error")
+      #      return render_template("error.html", link=about_link)
 
     else:
-        about_link = url_for("error")
-        return render_template("error.html", link=about_link)
+        return redirect("/")
 
 
 @app.route("/error")
@@ -66,17 +86,30 @@ def dictionary_aus_json():          # Daten von der json Datei werden geladen
 def auflisten():
     drinks = dictionary_aus_json()
 
-    return drinks
+    return render_template("liste.html", drinks=drinks)
 
 
 @app.route("/einkaufszettel")
 def rechnen():
-    if zutaten1 in data
+    if zutaten_1 in data:
         return render_template("einkaufsliste.html")
 
     else:
         about_link = url_for("error")
         return render_template("error.html", link=about_link)
+
+
+
+gesamtpreis_drink1 = 24
+gesamtpreis_drink2 = 28.65
+gesamtpreis_drink3 = 37.5
+gesamtpreis_drink4 = 31.8
+gesamtpreis_drink5 = 34.5
+gesamtpreis_drink6 = 45.4
+gesamtpreis_drink7 = 51.5
+
+
+
 
 
 
