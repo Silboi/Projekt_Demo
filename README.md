@@ -2,7 +2,7 @@
 
  
 
-# Problembeschreibung/Motivation 
+# Problembeschreibung/Motivation  
 Man kann auf der Seite eine Zutat eingeben, welche man zu Hause hat und dann wird geschaut, ob man diese Zutat gerade brauchen kann für einen Drink.
 
 Wenn eine Zutat in einem Drink enthalten ist, dann wird der Drink angezeigt. Man sieht auch noch den Preis des Drinks. Wenn man mehrere Drinks hat wird diese Summe von Drink zu Drink aufsummiert und man sieht am Schluss den Preis der gesamten Drinks. 
