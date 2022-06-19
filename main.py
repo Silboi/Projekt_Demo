@@ -27,27 +27,39 @@ def formular():
 
 @app.route("/zutaten", methods=["get", "post"])
 def zutaten():
+    zutaten_1 = ""
+    zutaten_2 = ""
+    zutaten_3 = ""
+    drinks_match = []
+    karte = {}
+    gesamtpreis = 0
+
     if request.method.lower() == "post":
         zutaten_1 = request.form["erste_zutat"]
         zutaten_2 = request.form["zweite_zutat"]
         zutaten_3 = request.form["dritte_zutat"]
 
-        karte = dictionary_aus_json()
-        drinks_match = []
+    karte = dictionary_aus_json()
+    drinks_match = []
 
-        for drink in karte:
-
-            drink_name = drink
-
-            for zutat in drink["Zutaten"]:
-
-                if zutaten_1 or zutaten_2 or zutaten_3 == zutat:
-                    drinks_match = drinks_match.append(drink_name)
-
+    for key, value in karte.items():
+        for key2, value2 in value.items():
+            for key3, value3 in value2.items():
+                gesamtpreis = gesamtpreis + value3["Preis"]
+                if key3 == zutaten_1:
+                    drinks_match.append([key, gesamtpreis])
+                elif key3 == zutaten_2:
+                    drinks_match.append([key, gesamtpreis])
+                elif key3 == zutaten_3:
+                    drinks_match.append([key, gesamtpreis])
                 else:
-                    drinks_match = "no match found"
+                    print("Kein Drink gefunden")
+        gesamtpreis = 0
 
-                return render_template("zutaten.html", zutaten1=zutaten_1, zutaten2=zutaten_2, zutaten3=zutaten_3, drinks_match=drinks_match, karte=karte)
+
+
+
+    return render_template("zutaten.html", zutaten1=zutaten_1, zutaten2=zutaten_2, zutaten3=zutaten_3, drinks_match=drinks_match, karte=karte)
 
 
 
@@ -55,8 +67,7 @@ def zutaten():
      #       about_link = url_for("error")
       #      return render_template("error.html", link=about_link)
 
-    else:
-        return redirect("/")
+
 
 
 @app.route("/error")

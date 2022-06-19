@@ -3,19 +3,19 @@
         "Zutaten": {
           "Rum": {
             "Menge": "5cl",
-            "Preis": "20.-"
+            "Preis": 20
           },
           "Limettensaft": {
             "Menge": "2,5cl",
-            "Preis": "1.-"
+            "Preis": 1
           },
           "Rohrzucker": {
             "Menge": "2-3 Teelöffel",
-            "Preis": "2.-"
+            "Preis": 2
           },
           "Mineralwasser": {
             "Menge": "5-8cl",
-            "Preis": "1.-"
+            "Preis": 1
           }
         }
       },
@@ -23,15 +23,15 @@
       "Zutaten": {
         "Cachaca": {
           "Menge": "5cl",
-          "Preis": "26.-"
+          "Preis": 26
         },
         "Limette": {
           "Menge": "1",
-          "Preis": "0.65.-"
+          "Preis": 0.65
         },
         "Rohrzucker": {
           "Menge": "2 Esslöffel",
-          "Preis": "2.-"
+          "Preis": 2
         }
       }
     },
@@ -39,27 +39,27 @@
       "Zutaten": {
         "Rum": {
           "Menge": "4cl",
-          "Preis": "20.-"
+          "Preis": 20
         },
         "Ananassaft": {
           "Menge": "10cl",
-          "Preis": "1.95.-"
+          "Preis": 1.95
         },
         "Kokosnuss Creme": {
           "Menge": "4cl",
-          "Preis": "1.85.-"
+          "Preis": 1.85
         },
         "Schlagsahne": {
           "Menge": "2cl",
-          "Preis": "3.90.-"
+          "Preis": 3.90
         },
         "Eiswürfel": {
           "Menge": "4",
-          "Preis": "9.80.-"
+          "Preis": 9.80
         },
         "Ananas": {
           "Menge": "1 Scheibe",
-          "Preis": "2.30.-"
+          "Preis": 2.30
         }
       }
     },
@@ -67,19 +67,19 @@
       "Zutaten": {
         "Rum": {
           "Menge": "5cl",
-          "Preis": "20.-"
+          "Preis": 20
         },
         "Cola": {
           "Menge": "15cl",
-          "Preis": "1.35.-"
+          "Preis": 1.35
         },
         "Limette": {
           "Menge": "1/2",
-          "Preis": "0.65.-"
+          "Preis": 0.65
         },
         "Eiswürfel": {
           "Menge": "3-4",
-          "Preis": "9.80.-"
+          "Preis": 9.80
         }
       }
     },
@@ -87,11 +87,11 @@
       "Zutaten": {
         "Vodka": {
           "Menge": "6cl",
-          "Preis": "19.95.-"
+          "Preis": 19.95
         },
         "Gurke": {
           "Menge": "2 Scheiben",
-          "Preis": "1.80.-"
+          "Preis": 1.80
         },
         "Limettensaft": {
           "Menge": "2cl",
