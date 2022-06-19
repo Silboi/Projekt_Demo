@@ -142,9 +142,7 @@ def about():
     return "Bitte gib "
 
 
-@app.route('/hello/<name2>')
-def begruessung(name2):
-    return "Hallo " + name2 + "!"
+
 
 
 

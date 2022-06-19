@@ -95,15 +95,15 @@
         },
         "Limettensaft": {
           "Menge": "2cl",
-          "Preis": "1.-"
+          "Preis": 1
         },
         "Eiswürfel": {
           "Menge": "3-4",
-          "Preis": "9.80.-"
+          "Preis": 9.80
         },
         "Ginger Beer": {
           "Menge": "16cl",
-          "Preis": "1.95.-"
+          "Preis": 1.95
         }
       }
     },
@@ -111,19 +111,19 @@
       "Zutaten": {
         "Gin": {
           "Menge": "4cl",
-          "Preis": "32.95.-"
+          "Preis": 32.95
         },
         "Tonic Water": {
           "Menge": "250ml",
-          "Preis": "2.-"
+          "Preis": 2
         },
         "Limette": {
           "Menge": "1 Scheibe",
-          "Preis": "0.65.-"
+          "Preis": 0.65
         },
         "Eiswürfel": {
           "Menge": "3-4",
-          "Preis": "9.80.-"
+          "Preis": 9.80
         }
       }
     },
@@ -131,19 +131,19 @@
       "Zutaten": {
         "weisser Tequila": {
           "Menge": "4cl",
-          "Preis": "23.95.-"
+          "Preis": 23.95
         },
         "Orangenlikör": {
           "Menge": "2cl",
-          "Preis": "25.90.-"
+          "Preis": 25.90
         },
         "Limettensaft": {
           "Menge": "2cl",
-          "Preis": "1.-"
+          "Preis": 1
         },
         "Limette": {
           "Menge": "1/2",
-          "Preis": "0.65.-"
+          "Preis": 0.65
         }
       }
     }
