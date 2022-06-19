@@ -9,10 +9,10 @@ Wenn eine Zutat in einem Drink enthalten ist, dann wird der Drink angezeigt. Man
 
 Auf einer weiteren Seite erhält man einen Überblick, was es alles für Drinks gibt, samt den Zutaten.
 
-###Problem
+### Problem
 Dieses Projekt ist gut gegen Foodwaste, denn man kann auf einen Blick sehen, zu was man all diese Zutaten, welche vielleicht noch übriggeblieben sind, gebrauchen kann. Somit wirft man diese nicht einfach weg, sondern verwertet diese. 
 
-###Motivation
+### Motivation
 Ich empfand dies als eine spannende Idee für ein solches Projekt. Somit kann man schnell und einfach schauen, was man mit den Zutaten machen kann. 
 
 # Betrieb
