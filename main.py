@@ -10,7 +10,7 @@ import json
 app = Flask(__name__)
 
 
-@app.route('/', methods=["get", "post"])            #formular erstellt bzw. verknüpfung, mit get und post wird entgegengenommen und wiedergegeben
+@app.route('/', methods=["get", "post"])            #Formular erstellt bzw. verknüpfung, mit get und post wird entgegengenommen und wiedergegeben
 def formular():
     if request.method.lower() == "post":
         zutaten = request.form["erste_zutat"]
