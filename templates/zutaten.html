@@ -3,19 +3,12 @@
 {% block content %}
 
 {{ zutaten1 }}              <!-- erste Eingabe ausgeben -->
-<br>
+<br><br>
 
-{{ zutaten2 }}              <!-- zweite Eingabe ausgeben -->
-<br>
+{% for drink in drinks_match %}             <!-- Loop, um Ergebnis als Liste auszugeben -->
 
-{{ zutaten3 }}              <!-- dritte Eingabe ausgeben -->
-<br>
-<br>
-
-{% for drink in drinks_match %}
-
-<p>Drink: {{ drink[0] }}</p>
-<p>Preis: {{ drink[1] }}</p>
+<p>Drink: {{ drink[0] }}</p>                <!-- Werte ausgegeben mit jinja code -->
+<p>Preis: {{ drink[1] }}</p>                <!-- Werte ausgegeben mit jinja code -->
 
 {% endfor  %}
 

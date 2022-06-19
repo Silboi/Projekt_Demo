@@ -2,20 +2,17 @@
 
 {% block content %}
 
-
-
-{% for drink_name, zutaten in drinks.items(): %}
+{% for drink_name, zutaten in drinks.items(): %}        <!-- Loop in jinja code für Liste -->
 
 <ul>
 
-<li>{{ drink_name }}
+<li>{{ drink_name }}                        <!-- Ausgabe in jinja code -->
     <ul>
         <li> Zutaten
             <ul>
-                {% for zutat in zutaten["Zutaten"].keys(): %}
+                {% for zutat in zutaten["Zutaten"].keys(): %}       <!-- Loop in jinja für Auflistung -->
                 <li>{{ zutat }}</li>
                 {% endfor %}
-
             </ul>
         <li/>
     </ul>
@@ -24,8 +21,6 @@
 </ul>
 
 {% endfor %}
-
-
 
 
 {% endblock %}
